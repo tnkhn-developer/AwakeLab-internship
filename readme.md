@@ -8,8 +8,6 @@ A create-read-update-delete server with nodejs and docker. Docker is used to con
 -cat init.sql | docker exec -i --user postgres crud-docker-copy3-db-1  psql -U postgres </br>
 -docker-compose up </br>
 
-## Architecture followed 
-The project follows Model-View-Controller architecture. This is most popular for Node applications.
 
 
 ## Notice
