@@ -10,10 +10,10 @@ A create-read-update-delete server with nodejs and docker. Docker is used to con
 - UI: Dust, Html, Css, Bootstrap, Font-awsome.
 
 ## Instructions execute in order
--docker-compose down --volumes
--docker-compose up --build -d </br>
--cat init.sql | docker exec -i --user postgres crud-docker-copy3-db-1  psql -U postgres </br>
--docker-compose up </br>
+- docker-compose down --volumes </br>
+- docker-compose up --build -d </br>
+- cat init.sql | docker exec -i --user postgres crud-docker-copy3-db-1  psql -U postgres </br>
+- docker-compose up </br>
 
 ## Files and Routes
 - Server.js contains the the route to run the app on localhost:5000/
