@@ -1,4 +1,4 @@
-### Awakelabs-internship
+# Awakelabs-internship
 
 ## Project-description
 A create-read-update-delete server with nodejs and docker. Docker is used to containerize the server and database. Also to communicate between the containers to provide CRUD operations.
@@ -8,8 +8,7 @@ A create-read-update-delete server with nodejs and docker. Docker is used to con
 -cat init.sql | docker exec -i --user postgres crud-docker-copy3-db-1  psql -U postgres </br>
 -docker-compose up </br>
 
-##
-Notice
+## Notice
  I have changed usernames and passwords. These can be found in process.env file.
 
 
