@@ -1,0 +1,8 @@
+Most Difficult part:
+The most difficult part was docker. I never worked in docker. It took me some research to understand the 
+concept. when I was running the docker containers , I could not link the init.sql file to the database 
+container. It took some time to find the command that executes the sql file and restores in the database
+container. After that, it did not take long to build the rest of the server.
+
+What would I improve:
+If I was given more time, I would definitely improve the User interface.
