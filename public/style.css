@@ -1,0 +1,12 @@
+.buttons-align{
+    display:flex;
+    margin-left:2%;
+}
+
+.item{
+    margin-left:5px;
+}
+
+.center-wrapped{
+    margin-left:30%;
+}

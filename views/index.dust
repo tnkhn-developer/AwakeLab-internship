@@ -1,0 +1,24 @@
+{>"layout" /}
+
+{<body}
+    <div class="center-wrapped">
+        <h1>AwakeLabs Members</h1>
+        {#members}
+        <div class="well">
+            <ul>
+                <li>Alias: {alias}</li>
+                <li>Location: {location}</li>
+                <li>Email: {email}</li>
+                <div class="buttons-align">
+                    <form method="post" action="/delete-member/{id}">
+                        <button type="submit" class="btn btn-warning item"><i class="fa-solid fa-user-minus"></i></button>
+                    </form>
+                    <form method="get" action="/update-member/{id}/{alias}/{location}/{email}">
+                        <button type="submit" class="btn btn-primary item"><i class="fa-solid fa-pen-to-square fa-xl"></i></button>
+                    </form>
+                </div>            
+            </ul>
+        </div>
+        {/members}
+    </div>
+{/body}

@@ -1,0 +1,28 @@
+# Use root/example as user/password credentials
+
+version: "4.2"
+
+services:
+  server:
+    build:
+      context: .
+    depends_on:
+      - db
+    ports:
+      - '5000:5000'
+
+  db:  
+    image: postgres
+    restart: always
+    ports:
+      - '4321:5432'
+    environment:
+      POSTGRES_PASSWORD: passkey9955
+      POSTGRES_USER: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/pgdata
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+  
+volumes:
+  postgres_data:
